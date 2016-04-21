@@ -1,10 +1,11 @@
 .cover {
     position:absolute;
     top: 0;
-    z-index: -10;
+    z-index: -1;
 }
 
 h1 {
     color: white;
-    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255, 0.7);
+    box-shadow: rgba(0,0,0,0.7) 0 1px 0;
 }
