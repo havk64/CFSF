@@ -1,11 +1,34 @@
+/*
 .cover {
     position:absolute;
     top: 0;
     z-index: -1;
 }
+*/
+$border-tab: 1px solid #ddd;
+
+.jumbotron {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(../img/French-way.jpg) center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+}
 
 h1 {
     color: white;
-    border-bottom: 1px solid rgba(255,255,255, 0.7);
-    box-shadow: rgba(0,0,0,0.7) 0 1px 0;
+    border-bottom: 1px solid #121212;
+    box-shadow: rgba(255,255,255,0.7) 0 .5px 0;
+}
+
+.text-front {
+    color: white;
+}
+
+.tab-custom {
+    border-left: $border-tab;
+    border-right: $border-tab;
+    border-bottom: $border-tab;
+    padding: 10px;
 }
