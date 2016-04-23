@@ -7295,6 +7295,10 @@ box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/
 .hidding {
   visibility: hidden; }
 
+/* line 40, ../sass/_base.scss */
+.img-responsive {
+  width: 100%; }
+
 /*
 .box-custom { //Trying to give color of old things...
     background-color: rgba(184, 115, 51, 0.04);
