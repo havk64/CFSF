@@ -3,10 +3,16 @@ $(function(){
                        var $this = $(this),
                            url = $this.attr('href'),
                            targ = $this.attr('data-target');
-        $.get(url, function(data){ // Get the html data
-            $(targ).html(data);
+        $.ajax(url,{
+            success: function(data){
+                $(targ).html(data);
+            }
         });
+        /*$.get(url, function(data){ // Using get instead of $.ajax();
+            $(targ).html(data);
+        });*/
         $this.tab('show'); // Show the tab.
         return false;
                        });
+    $('[data-target="#Notre-Dame"]').click();
 })
