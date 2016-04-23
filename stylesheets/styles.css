@@ -7281,8 +7281,8 @@ button.close {
 /* line 19, ../sass/_base.scss */
 h1 {
   color: white;
-  border-bottom: 1px solid #121212;
-  box-shadow: rgba(255, 255, 255, 0.7) 0 0.5px 0; }
+  /*border-bottom: 1px solid #121212;
+  box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/ }
 
 /* line 25, ../sass/_base.scss */
 .text-front {
@@ -7294,3 +7294,15 @@ h1 {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px; }
+
+/* line 36, ../sass/_base.scss */
+.hidding {
+  visibility: hidden; }
+
+/*
+.box-custom { //Trying to give color of old things...
+    background-color: rgba(184, 115, 51, 0.04);
+    text-shadow: 0 1px 1px #fff;
+    box-shadow: white 0 1px 0, rgba(0, 0, 0, 0.5) 0 1px 1px 0px inset;
+}
+*/
