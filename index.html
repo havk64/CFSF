@@ -8,7 +8,10 @@
     <title>Le Chemin Francophone de San Francisco</title>
 
     <!-- Bootstrap -->
-    <link href="stylesheets/styles.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    
+    <meta name="description" content="Free online guided walking tour of San Francisco's surprisingly rich French history, as well as the considerable French presence today.">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,11 +21,11 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid">
-       <img class="img-responsive cover" src="http://media4.s-nbcnews.com/j/newscms/2015_46/1302581/151113-san-fransisco-paris-attacks-mn-0100_4726ce744e95ef7d892a3141b67dc889.nbcnews-ux-2880-1000.jpg" alt="French Cathedral">
-        <div class="container"> <!-- Beggining of Container -->
+    <div class="jumbotron">
+
+        <div class="container text-front"> <!-- Beggining of Container -->
           <nav class="navbar navbar-inverse"> <!-- Beginning of Navbar -->
-              <div class="container-fluid">
+              <div class="container-fluid">  <!-- Beginning of container-fuid -->
                   <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -32,24 +35,111 @@
                       </button>
                       <a class="navbar-brand active" href="#">Le Chemin</a>
                   </div> <!-- End of Navbar Header -->
-                  div.collapse <navbar-collapse>
-                      <ul class="nav navbar-nav">
-                          <li class="active"><a href="">The Map</a></li>
-                          <li><a href="">Attractions</a></li>
-                          <li><a href="">Places</a></li>
-                          <li><a href="">About</a></li>
-                      </ul>
-                  </navbar-collapse>
+                  <div class="collapse navbar-collapse">
+                      
+                          <ul class="nav navbar-nav">
+                              <li class="active"><a href="">The Map</a></li>
+                              <li><a href="">Attractions</a></li>
+                              <li><a href="">Places</a></li>
+                              <li><a href="">About</a></li>
+                          </ul>
+                     
+                  </div>  <!-- / End of navbar collapse -->
               </div> <!-- End of navbar container fluid -->
           </nav>  <!-- End of Navbar -->
            
-            <h1>Le Chemin Francophone</h1>
+            <h1>The French Way of San Francisco</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Hello and welcome to San Francisco!</h3>
+                    <p>This website offers a <span>free online guided walking</span> tour of San Francisco's surprisingly rich French
+                    
+                    history, as well as the considerable French presence today.</p>
+                           
+                </div> <!-- / End of md-6 -->
+            </div> <!-- / End of 1st Row -->
         </div> <!-- End of Container -->
-    </div>
+        
+    </div> <!-- End of Jumbotron -->
+    <div class="container">
+        <h3 class="text-center">The History</h3>
+        <div class="row">
+            <div class="panel panel-default col-md-3 hidding"> <!-- Beginning right panel -->
+                <div class="panel-body">
+                    Left Panel
+                </div>
+            </div> <!-- / End of left panel -->
+            
+            <div class="panel panel-default col-md-6 box-custom"> <!-- Beginning center panel -->
+                <div class="panel-body">
+                                     <p>
+                                      The history of many of San Francisco's other immigrant communities are much better known, but the story of the city is incomplete without the contribution of the French.
+                                      </p>
+                                      <p>
+                                      On the tour you will discover that the story is not just limited to influences directly from France but from other French speaking groups as well.
+                                      </p>
+                                      <p>
+                                      This site is currently under construction and more information will be available soon. In the future the site will also feature this information in audio.
+                                      </p>
+                                      <p>
+                                      The tour begins at Union Square, just north of Market Street. The Powell Street and Montgomery Street BART stations are the closest.</p>
+                </div> <!-- / End of panel body (central panel) --> 
+            </div> <!-- / End of center panel  -->
+            
+            <div class="panel panel-default col-md-3 hidding"> <!-- Beginning right panel -->
+                <div class="panel-body hidding">
+                    Right panel
+                </div>
+            </div> <!-- / End right panel -->
+            
+        </div> <!-- / End of central Row -->
+        
+        <h3 class="text-center">Guided Tour</h3>
+        <div class="panel panel-default"><div class="panel-body"> <!-- Beginning Panel Guided Tour -->
+                        <!-- Nav Tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="/views/Notredame.html" data-target="#Notre-Dame" aria-controls="Notre-Dame" role="tab">Notre Dame des Victoires</a></li>
+                            <li role="presentation"><a href="/views/Quartier.html" data-target="#Quartier" aria-controls="Quartier" role="tab">French Quarter</a></li>
+                            <li role="presentation"><a href="/views/Consultant.html" data-target="#Consulat" aria-controls="Consulat" role="tab">Canadian Consulate</a></li>
+                            <li role="presentation"><a href="/views/Hudson.html" data-target="#Hudson" aria-controls="Hudson" role="tab" >Hudson’s Bay Plaque</a></li>
+                            <li role="presentation"><a href="/views/Denimes.html" data-target="#De-Nimes" aria-controls="De-Nimes" role="tab">Denim Jeans</a></li>
+                            <li role="presentation"><a href="/views/Boulangeries.html" data-target="#Boulangeries" aria-controls="Boulangeries" role="tab">French Bakeries</a></li>
+                            <li role="presentation"><a href="/views/Consultat.html" data-target="#Consultat" aria-controls="Consultat" role="tab" data-toggle="tab">French Consulate</a></li>
+                        </ul> <!-- / End of Nav Tabs -->
+                    
+                        <!-- Tab Panes -->
+                        <div class="tab-content tab-custom">
+                            <div class="tab-pane fade in active" role="tabpanel" id="Notre-Dame">
+                                
+                            </div> <!-- / End Notre-Dame -->
+                            <div class="tab-pane fade" role="tabpanel" id="Quartier">
+                                
+                            </div> <!-- / End Quartier -->
+                            <div class="tab-pane fade" role="tabpanel" id="Consulate">
+                                
+                            </div> <!-- / End Consulate -->
+                            <div class="tab-pane fade" role="tabpanel" id="Hudson">
+                                
+                            </div> <!-- / End Hudson -->
+                            <div class="tab-pane fade" role="tabpanel" id="De-Nimes">
+                                
+                            </div> <!-- / End De-Nimes -->
+                            <div class="tab-pane fade" role="tabpanel" id="Boulangeries">
+
+                            </div> <!-- / End Boulangeries -->
+                            <div class="tab-pane fade" role="tabpanel" id="Consultat">
+                                
+                            </div> <!-- / End Consultat -->
+                        </div> <!-- / End of Tab Panes --> 
+                        </div> <!-- / End of Panel Body Guided Tour -->
+                        </div> <!-- / End Panel Guided Tour -->
+        
+    </div> <!-- / End of 2nd container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="javascripts/behavior.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
   </body>
 </html>
