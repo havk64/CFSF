@@ -7285,7 +7285,7 @@ box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/
   color: white; }
 
 /* line 29, ../sass/_base.scss */
-.tab-custom {
+.tab-border {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
