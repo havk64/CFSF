@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>{{title}}</title>
+    <title>The French Way of San Francisco</title>
 
     <!-- Bootstrap -->
     <link href="stylesheets/styles.css" rel="stylesheet" />
@@ -38,11 +38,11 @@
                   <div class="collapse navbar-collapse">
                       
                           <ul class="nav navbar-nav navbar-right">
-                              <li class="active"><a href="#">{{nav[0]}}</a></li>
-                              <li><a href="#History">{{nav[1]}}</a></li>
+                              <li class="active"><a href="#">{{nav.[0]}}</a></li>
+                              <li><a href="#History">{{nav.[1]}}</a></li>
                               <li><a href="#Guided-Tour">{{nav[2]}}</a></li>
-                              <li><a href="">{{nav[3]}}</a></li>
-                              <li><a href="">{{nav[4]}}</a></li>
+                              <li><a href="">{{nav.[3]}}</a></li>
+                              <li><a href="">{{nav.[4]}}</a></li>
                           </ul>
                      
                   </div>  <!-- / End of navbar collapse -->
@@ -71,17 +71,7 @@
             
             <div class="panel panel-default col-md-6 box-custom"> <!-- Beginning center panel -->
                 <div class="panel-body"> <!-- <<<<<<<<<< Continue here >>>>>>>>>>> -->
-                                     <p>
-                                      The history of many of San Francisco's other immigrant communities are much better known, but the story of the city is incomplete without the contribution of the French.
-                                      </p>
-                                      <p>
-                                      On the tour you will discover that the story is not just limited to influences directly from France but from other French speaking groups as well.
-                                      </p>
-                                      <p>
-                                      This site is currently under construction and more information will be available soon. In the future the site will also feature this information in audio.
-                                      </p>
-                                      <p>
-                                      The tour begins at Union Square, just north of Market Street. The Powell Street and Montgomery Street BART stations are the closest.</p>
+                                     <p>{{history}}</p>
                 </div> <!-- / End of panel body (central panel) --> 
             </div> <!-- / End of center panel  -->
             
@@ -93,17 +83,15 @@
             
         </div> <!-- / End of central Row -->
         
-        <h3 id="Guided-Tour" class="text-center">Guided Tour</h3>
+        <h3 id="Guided-Tour" class="text-center">{{nav[2]}}</h3>
         <div class="panel panel-default"><div class="panel-body"> <!-- Beginning Panel Guided Tour -->
                         <!-- Nav Tabs -->
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="/views/Notredame.html" data-target="#Notre-Dame" aria-controls="Notre-Dame" role="tab">Notre Dame des Victoires</a></li>
-                            <li role="presentation"><a href="/views/Quartier.html" data-target="#Quartier" aria-controls="Quartier" role="tab">French Quarter</a></li>
-                            <li role="presentation"><a href="/views/Consultant.html" data-target="#Consulate" aria-controls="Consulat" role="tab">Canadian Consulate</a></li>
-                            <li role="presentation"><a href="/views/Hudson.html" data-target="#Hudson" aria-controls="Hudson" role="tab" >Hudson’s Bay Plaque</a></li>
-                            <li role="presentation"><a href="/views/Denimes.html" data-target="#De-Nimes" aria-controls="De-Nimes" role="tab">Denim Jeans</a></li>
-                            <li role="presentation"><a href="/views/Boulangeries.html" data-target="#Boulangeries" aria-controls="Boulangeries" role="tab">French Bakeries</a></li>
-                            <li role="presentation"><a href="/views/Consultat.html" data-target="#Consultat" aria-controls="Consultat" role="tab" data-toggle="tab">French Consulate</a></li>
+                          
+                           {{#each places}}
+                            <li role="presentation"><a href="{{href}}" data-target="{{data-target}}" aria-controls="{{aria-controls}}" role="tab">{{title}}</a></li>
+                            {{/each}}
+                            
                         </ul> <!-- / End of Nav Tabs -->
                     
                         <!-- Tab Panes -->
