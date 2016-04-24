@@ -1,4 +1,14 @@
 $(function(){
+    var source = $('#template').html();
+    var template = Handlebars.compile(source);
+    $.ajax('/views/english.json',{
+        success: function(data){
+            var html = template(data);
+            $('#container').prepend(html);
+            renderTabs();
+        }
+    });
+    function renderTabs(){
     $('[role="tab"]').click(function(e){ // Selecting each anchor element of tabs.
                        var $this = $(this),
                            url = $this.attr('href'),
@@ -14,5 +24,6 @@ $(function(){
         $this.tab('show'); // Show the tab.
         return false;
                        });
-    $('[data-target="#Notre-Dame"]').click();
+    $('[data-target="#Notredame"]').click();
+    }
 })
