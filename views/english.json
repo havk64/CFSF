@@ -1,8 +1,8 @@
-[{
+{
     "lang": "en",
     "title": "The French Way of San Francisco",
     "nav": ["Home", "The History", "Guided Tour", "Map", "About us" ],
-    "h1": "<h3>Hello and welcome to San Francisco!</h3>",
+    "h1": "Hello and welcome to San Francisco!",
     "p1": "This website offers a <span>free online guided walking</span> tour of San Francisco's surprisingly rich French history, as well as the considerable French presence today.",
     "history": "The history of many of San Francisco's other immigrant communities are much better known, but the story of the city is incomplete without the contribution of the French.</p><p>On the tour you will discover that the story is not just limited to influences directly from France but from other French speaking groups as well.</p><p>This site is currently under construction and more information will be available soon. In the future the site will also feature this information in audio.</p><p>The tour begins at Union Square, just north of Market Street. The Powell Street and Montgomery Street BART stations are the closest.",
     "places": [
@@ -13,7 +13,7 @@
 	    "title": "Notre Dame des Victoires"
 	},
 	{
-	    "href":"/views/Quartier.html"
+	    "href":"/views/Quartier.html",
 	    "data-target": "#Quartier",
 	    "aria-controls": "French Quarter",
 	    "title": "French Quarter"
@@ -34,18 +34,18 @@
 	    "href":"/views/Denimes.html",
 	    "data-target": "#De-Nimes",
 	    "aria-controls": "Denim Jeans",
-	    "title": "Denim Jeans",
+	    "title": "Denim Jeans"
 	},
 	{
 	    "href":"/views/Boulangeries.html",
-	    "data-target": "#Bolangeries",
+	    "data-target": "#Boulangeries",
 	    "aria-controls": "French Bakeries",
-	    "title": "French Bakeries",
+	    "title": "French Bakeries"
 	},
 	{
 	    "href":"/views/Consultat.html",
 	    "data-target": "#Consultat",
 	    "aria-controls": "French Consulate",
-	    "title": "French Consulate",
-	}
-}]
+	    "title": "French Consulate"
+	}]
+}
