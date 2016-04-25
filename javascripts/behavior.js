@@ -1,6 +1,7 @@
 $(function(){
-    var source = $('#template').html();
-    var template = Handlebars.compile(source);
+    //var source = $('#template').html();
+    //var template = Handlebars.compile(source);
+    var template = Handlebars.templates['main'];
     $.ajax('/views/english.json',{
         success: function(data){
             var html = template(data);

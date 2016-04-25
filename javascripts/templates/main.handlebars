@@ -1,0 +1,94 @@
+           <div class="jumbotron">
+            
+                <div class="container text-front"> <!-- Beggining of Container -->
+                  <nav class="navbar navbar-inverse"> <!-- Beginning of Navbar -->
+                      <div class="container-fluid">  <!-- Beginning of container-fuid -->
+                          <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand active" href="#">Le Chemin Francophone</a>
+                          </div> <!-- End of Navbar Header -->
+                          <div class="collapse navbar-collapse">
+                              
+                                  <ul class="nav navbar-nav navbar-right">
+                                      <li class="active"><a href="#">{{nav.[0]}}</a></li>
+                                      <li><a href="#History">{{nav.[1]}}</a></li>
+                                      <li><a href="#Guided-Tour">{{nav.[2]}}</a></li>
+                                      <li><a href="">{{nav.[3]}}</a></li>
+                                      <li><a href="">{{nav.[4]}}</a></li>
+                                  </ul>
+                             
+                          </div>  <!-- / End of navbar collapse -->
+                      </div> <!-- End of navbar container fluid -->
+                  </nav>  <!-- End of Navbar -->
+                   
+                    <h1>{{title}}</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>{{h1}}</h3>
+                            <p>{{{p1}}}</p>
+                                   
+                        </div> <!-- / End of md-6 -->
+                    </div> <!-- / End of 1st Row -->
+                </div> <!-- End of Container -->
+                
+            </div> <!-- End of Jumbotron -->
+            <div class="container">
+                <h3 id="History" class="text-center">{{nav.[1]}}</h3>
+                <div class="row">
+                    <div class="panel panel-default col-md-3 hidding"> <!-- Beginning right panel -->
+                        <div class="panel-body">
+                            Left Panel
+                        </div>
+                    </div> <!-- / End of left panel -->
+                    
+                    <div class="panel panel-default col-md-6 box-custom"> <!-- Beginning center panel -->
+                        <div class="panel-body"> 
+                                             <p>{{{history}}}</p>
+                        </div> <!-- / End of panel body (central panel) --> 
+                    </div> <!-- / End of center panel  -->
+                    
+                    <div class="panel panel-default col-md-3 hidding"> <!-- Beginning right panel -->
+                        <div class="panel-body hidding">
+                            Right panel
+                        </div>
+                    </div> <!-- / End right panel -->
+                    
+                </div> <!-- / End of central Row -->
+                
+                <h3 id="Guided-Tour" class="text-center">{{nav.[2]}}</h3>
+                <div class="panel panel-default"><div class="panel-body"> <!-- Beginning Panel Guided Tour -->
+                                <!-- Nav Tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                  
+                                   {{#each places}}
+                                    <li role="presentation"><a href="{{href}}" data-target="{{data-target}}" aria-controls="{{aria-controls}}" role="tab">{{title}}</a></li>
+                                    {{/each}}
+                                    
+                                </ul> <!-- / End of Nav Tabs -->
+                            
+                                <!-- Tab Panes -->
+                                <div class="tab-content tab-border">
+                                    <div class="tab-pane fade in active" role="tabpanel" id="Notredame">
+                                    </div> <!-- / End Notre-Dame -->
+                                    <div class="tab-pane fade" role="tabpanel" id="Quartier">
+                                    </div> <!-- / End Quartier -->
+                                    <div class="tab-pane fade" role="tabpanel" id="Consulate">
+                                    </div> <!-- / End Consulate -->
+                                    <div class="tab-pane fade" role="tabpanel" id="Hudson">
+                                    </div> <!-- / End Hudson -->
+                                    <div class="tab-pane fade" role="tabpanel" id="De-Nimes">
+                                    </div> <!-- / End De-Nimes -->
+                                    <div class="tab-pane fade" role="tabpanel" id="Boulangeries">
+                                    </div> <!-- / End Boulangeries -->
+                                    <div class="tab-pane fade" role="tabpanel" id="Consultat">
+                                    </div> <!-- / End Consultat -->
+                                </div> <!-- / End of Tab Panes --> 
+                                </div> <!-- / End of Panel Body Guided Tour -->
+                                </div> <!-- / End Panel Guided Tour -->
+                
+            </div> <!-- / End of 2nd container -->
