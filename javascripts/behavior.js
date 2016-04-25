@@ -1,8 +1,9 @@
 $(function(){
+    var url = '/views/english.json';
     //var source = $('#template').html();
     //var template = Handlebars.compile(source);
-    var template = Handlebars.templates['main'];
-    $.ajax('/views/english.json',{
+    var template = Handlebars.templates['main']; // Using precompiled template.
+    $.ajax(url,{
         success: function(data){
             var html = template(data);
             $('#container').prepend(html);
