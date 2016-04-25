@@ -1,6 +1,51 @@
-[{
+{
     "lang": "fr",
-    "title": "Le Chemin Francophone de San Francisco",
-
-
-}]
+    "title": "Le chemin francophone de San Francisco",
+    "nav": ["Accueil", "L'histoire", "Visite Guidée", "Carte", "À propos de nous" ],
+    "h1": "Bonjour et Bienvenue à San Francisco!",
+    "p1": "Ce site vous propose une <span>gratuite visite guidée virtuelle<span> de la presence francophone actuelle et historique a San Francisco en français.",
+    "history": "L'histoire des autre communauté immigrantes à San Francisco sont bien mieux connue, mais l'histoire de la ville est incomplete si on ignore l'histoire française. La visite est une découverte d'une histoire pas seulement franco-française mais aussi une histoire de la francophonie à San Francisco.",
+    "places": [
+	{
+	    "href": "/views/french/Notredame.html",
+	    "data-target": "#Notredame",
+	    "aria-controls": "Notre Dame",
+	    "title": "Notre Dame des Victoires"
+	},
+	{
+	    "href":"/views/french/Quartier.html",
+	    "data-target": "#Quartier",
+	    "aria-controls": "Quartier Français",
+	    "title": "Quartier Français"
+	},
+	{
+	    "href":"/views/french/Consultant.html",
+	    "data-target": "#Consulate",
+	    "aria-controls": "Consulat du Canada",
+	    "title": "Consulat du Canada"
+	},
+	{
+	    "href":"/views/french/Hudson.html",
+	    "data-target": "#Hudson",
+	    "aria-controls": "Placard la Baie d’Hudson",
+	    "title": "Placard la Baie d’Hudson"
+	},
+	{
+	    "href":"/views/french/Denimes.html",
+	    "data-target": "#De-Nimes",
+	    "aria-controls": "Les “De Nimes” Jeans",
+	    "title": "Les “De Nimes” Jeans"
+	},
+	{
+	    "href":"/views/french/Boulangeries.html",
+	    "data-target": "#Boulangeries",
+	    "aria-controls": "Boulangeries Françaises",
+	    "title": "Boulangeries Françaises"
+	},
+	{
+	    "href":"/views/french/Consultat.html",
+	    "data-target": "#Consultat",
+	    "aria-controls": "Consulat de France",
+	    "title": "Consulat de France"
+	}]
+}
