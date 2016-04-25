@@ -1,5 +1,5 @@
 $(function(){
-    var url = '/views/french.json';
+    var url = '/views/english.json';
     //var source = $('#template').html();
     //var template = Handlebars.compile(source);
     var template = Handlebars.templates['main']; // Using precompiled template.
