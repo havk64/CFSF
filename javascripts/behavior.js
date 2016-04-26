@@ -14,6 +14,7 @@ $(function(){
     //var source = $('#template').html();
     //var template = Handlebars.compile(source);
     function loadLang(url){
+        $('#language').modal('hide');
         var template = Handlebars.templates['main']; // Using precompiled template.
         $.ajax(url,{
             success: function(data){
