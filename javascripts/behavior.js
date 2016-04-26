@@ -1,4 +1,5 @@
 $(function(){
+    $('#language').modal('toggle');
     var url = '/views/english.json';
     //var source = $('#template').html();
     //var template = Handlebars.compile(source);
