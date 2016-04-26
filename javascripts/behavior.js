@@ -1,16 +1,29 @@
 $(function(){
+    var url;
     $('#language').modal('toggle');
-    var url = '/views/english.json';
+    $('#english').click(function(){
+        $('html').attr('lang', 'en');
+        url = '/views/english.json';
+        loadLang(url);
+    });
+    $('#french').click(function(){
+        $('html').attr('lang', 'fr');
+        url = '/views/french.json';
+        loadLang(url);
+    })
     //var source = $('#template').html();
     //var template = Handlebars.compile(source);
-    var template = Handlebars.templates['main']; // Using precompiled template.
-    $.ajax(url,{
-        success: function(data){
-            var html = template(data);
-            $('#container').prepend(html);
-            renderTabs();
-        }
-    });
+    function loadLang(url){
+        var template = Handlebars.templates['main']; // Using precompiled template.
+        $.ajax(url,{
+            success: function(data){
+                var html = template(data);
+                $('#container').prepend(html);
+                renderTabs();
+            }
+        });
+    }
+    
     function renderTabs(){
     $('[role="tab"]').click(function(e){ // Selecting each anchor element of tabs.
                        var $this = $(this),
