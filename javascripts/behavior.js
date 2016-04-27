@@ -43,7 +43,8 @@ $(function(){
 
         $this.tab('show'); // Show the tab.
         return false;
-                       });
-    $('[data-target="#Notredame"]').click();
+    });
+        $('[data-target="#Notredame"]').click(); //Make the first tab active at load
+        $('#footer').removeClass('hidden'); // Show footer that is hidden.
     }
 })

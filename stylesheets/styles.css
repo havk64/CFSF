@@ -7316,13 +7316,13 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -50px; }
+  margin-bottom: -100px; }
   /* line 18, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
   #root #root_footer {
-    height: 50px; }
+    height: 100px; }
 
 /* line 20, ../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
-  height: 50px; }
+  height: 100px; }
