@@ -22,43 +22,52 @@
   </head>
   <body id="container">
   
-  <img class="hidden" src="img/French-way.jpg" alt="French Way"> <!-- Adding img to load before any content, while waiting to choose the language. -->
-  
-  <div id="language" class="modal fade" tabindex="-1" role="dialog">  <!--  Beginning Modal -->
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="modal-header">
-       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
-       <div class="row">
-           <div class="col-md-6">
-               <h1 class="modal-title text-center">Welcome!</h1>
-           </div>
-           <div class="col-md-6">
-               <h1 class="modal-title text-center">Bienvenue!</h1>
-           </div>
-       </div>
-      </div> <!-- /.modal-header -->
+  <div id="root">
+     <img class="hidden" src="img/French-way.jpg" alt="French Way"> <!-- Adding img to load before any content, while waiting to choose the language. -->
       
-      <div class="modal-body">
-        <div class="row">
-            <div class="col-md-6">
-                <p class="text-center">Choose your language:</p>
-                <button id="english" type="button" class="btn btn-lg btn-primary center-block">English</button>
+      <div id="language" class="modal fade" tabindex="-1" role="dialog">  <!--  Beginning Modal -->
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+           <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+           <div class="row">
+               <div class="col-md-6">
+                   <h1 class="modal-title text-center">Welcome!</h1>
+               </div>
+               <div class="col-md-6">
+                   <h1 class="modal-title text-center">Bienvenue!</h1>
+               </div>
+           </div>
+          </div> <!-- /.modal-header -->
+          
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center">Choose your language:</p>
+                    <button id="english" type="button" class="btn btn-lg btn-primary center-block">English</button>
+                </div>
+                <div class="col-md-6">
+                <p class="text-center">Choisissez votre langue:</p>
+                <button id="french" type="button" class="btn btn-lg btn-primary center-block">Français</button>
+                </div>
             </div>
-            <div class="col-md-6">
-            <p class="text-center">Choisissez votre langue:</p>
-            <button id="french" class="btn btn-lg btn-primary center-block">Français</button>
-            </div>
-        </div>
-        
-      </div> <!-- / .modal-body -->
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> / .modal-footer -->
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+            
+          </div> <!-- / .modal-body -->
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> / .modal-footer -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      <div id="root_footer"></div> <!-- For Sticky Footer -->
+      
+      </div> <!-- / #root -->
+      
+      <div id="footer">
+          
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="javascripts/jquery-2.2.3.min.js"></script>

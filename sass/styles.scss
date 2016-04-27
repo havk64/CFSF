@@ -8,3 +8,7 @@
 @import "bootstrap";
 
 @import "base";
+
+@import "compass/layout/sticky-footer";
+
+@include sticky-footer(50px);

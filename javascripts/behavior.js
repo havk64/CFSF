@@ -1,6 +1,12 @@
 $(function(){
     var url;
     $('#language').modal('toggle');
+   /* $('#language').on('hidden.bs.modal', function(){
+        if(!$('.jumbotron').lenght) {
+            alert("Please, choose a language!");
+            $(this).modal('toggle');
+        } else { console.log('Thanks!');}
+    });*/
     $('#english').click(function(){
         $('html').attr('lang', 'en');
         url = '/views/english.json';
@@ -11,15 +17,14 @@ $(function(){
         url = '/views/french.json';
         loadLang(url);
     })
-    //var source = $('#template').html();
-    //var template = Handlebars.compile(source);
+
     function loadLang(url){
         $('#language').modal('hide');
         var template = Handlebars.templates['main']; // Using precompiled template.
         $.ajax(url,{
             success: function(data){
                 var html = template(data);
-                $('#container').prepend(html);
+                $('#root').prepend(html);
                 renderTabs();
             }
         });
@@ -35,9 +40,7 @@ $(function(){
                 $(targ).html(data);
             }
         });
-        /*$.get(url, function(data){ // Using get instead of $.ajax();
-            $(targ).html(data);
-        });*/
+
         $this.tab('show'); // Show the tab.
         return false;
                        });
