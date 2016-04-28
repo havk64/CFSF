@@ -22,7 +22,8 @@ $(function(){
             success: function(data){
                 var html = template(data);
                 $('#root').prepend(html);
-                renderTabs();
+                renderTabs(); //Render tabs with chosen language
+                initMap(); //Load the Google Maps
             }
         });
     }
@@ -43,5 +44,13 @@ $(function(){
     });
         $('[data-target="#Notredame"]').click(); //Make the first tab active at load
         $('#footer').removeClass('hidden'); // Show footer that is hidden.
+    }
+    
+    function initMap(){
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv,{
+            center: {lat: 37.7909714, lng: -122.4087459},
+            zoom: 15
+        });
     }
 })
