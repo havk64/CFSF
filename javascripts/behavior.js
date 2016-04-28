@@ -1,12 +1,9 @@
 $(function(){
     var url;
-    $('#language').modal('toggle');
-   /* $('#language').on('hidden.bs.modal', function(){
-        if(!$('.jumbotron').lenght) {
-            alert("Please, choose a language!");
-            $(this).modal('toggle');
-        } else { console.log('Thanks!');}
-    });*/
+    $('#language').modal({
+        keyboard: false,
+        backdrop: 'static'
+    });
     $('#english').click(function(){
         $('html').attr('lang', 'en');
         url = '/views/english.json';
