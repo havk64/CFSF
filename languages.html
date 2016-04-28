@@ -42,7 +42,7 @@
                               <li class="active"><a href="#">Home</a></li>
                               <li><a href="#History">The History</a></li>
                               <li><a href="#Guided-Tour">Guided Tour</a></li>
-                              <li><a href="">Map</a></li>
+                              <li><a href="#map">Map</a></li>
                               <li><a href="">About Us</a></li>
                               
                               <li class="dropdown menu-item"> <!-- Dropdown menu with language options -->
@@ -104,40 +104,43 @@
             </div> <!-- / End right panel -->
             
         </div> <!-- / End of central Row -->
+        <h3 id="History" class="text-center">The Map</h3>
         
-        <h3 id="Guided-Tour" class="text-center">Guided Tour</h3>
-        <div class="panel panel-default"><div class="panel-body"> <!-- Beginning Panel Guided Tour -->
-                        <!-- Nav Tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="/views/Notredame.html" data-target="#Notre-Dame" aria-controls="Notre-Dame" role="tab">Notre Dame des Victoires</a></li>
-                            <li role="presentation"><a href="/views/Quartier.html" data-target="#Quartier" aria-controls="Quartier" role="tab">French Quarter</a></li>
-                            <li role="presentation"><a href="/views/Consultant.html" data-target="#Consulate" aria-controls="Consulat" role="tab">Canadian Consulate</a></li>
-                            <li role="presentation"><a href="/views/Hudson.html" data-target="#Hudson" aria-controls="Hudson" role="tab" >Hudson’s Bay Plaque</a></li>
-                            <li role="presentation"><a href="/views/Denimes.html" data-target="#De-Nimes" aria-controls="De-Nimes" role="tab">Denim Jeans</a></li>
-                            <li role="presentation"><a href="/views/Boulangeries.html" data-target="#Boulangeries" aria-controls="Boulangeries" role="tab">French Bakeries</a></li>
-                            <li role="presentation"><a href="/views/Consultat.html" data-target="#Consultat" aria-controls="Consultat" role="tab" data-toggle="tab">French Consulate</a></li>
-                        </ul> <!-- / End of Nav Tabs -->
-                    
-                        <!-- Tab Panes -->
-                        <div class="tab-content tab-border">
-                            <div class="tab-pane fade in active" role="tabpanel" id="Notre-Dame">
-                            </div> <!-- / End Notre-Dame -->
-                            <div class="tab-pane fade" role="tabpanel" id="Quartier">
-                            </div> <!-- / End Quartier -->
-                            <div class="tab-pane fade" role="tabpanel" id="Consulate">
-                            </div> <!-- / End Consulate -->
-                            <div class="tab-pane fade" role="tabpanel" id="Hudson">
-                            </div> <!-- / End Hudson -->
-                            <div class="tab-pane fade" role="tabpanel" id="De-Nimes">
-                            </div> <!-- / End De-Nimes -->
-                            <div class="tab-pane fade" role="tabpanel" id="Boulangeries">
-                            </div> <!-- / End Boulangeries -->
-                            <div class="tab-pane fade" role="tabpanel" id="Consultat">
-                            </div> <!-- / End Consultat -->
-                        </div> <!-- / End of Tab Panes --> 
-                        </div> <!-- / End of Panel Body Guided Tour -->
-                        </div> <!-- / End Panel Guided Tour -->
+        <div id="map"></div>
+           <h3 id="Guided-Tour" class="text-center">Guided Tour</h3>
+            <div class="panel panel-default"><div class="panel-body"> <!-- Beginning Panel Guided Tour -->
+                            <!-- Nav Tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="/views/Notredame.html" data-target="#Notre-Dame" aria-controls="Notre-Dame" role="tab">Notre Dame des Victoires</a></li>
+                                <li role="presentation"><a href="/views/Quartier.html" data-target="#Quartier" aria-controls="Quartier" role="tab">French Quarter</a></li>
+                                <li role="presentation"><a href="/views/Consultant.html" data-target="#Consulate" aria-controls="Consulat" role="tab">Canadian Consulate</a></li>
+                                <li role="presentation"><a href="/views/Hudson.html" data-target="#Hudson" aria-controls="Hudson" role="tab" >Hudson’s Bay Plaque</a></li>
+                                <li role="presentation"><a href="/views/Denimes.html" data-target="#De-Nimes" aria-controls="De-Nimes" role="tab">Denim Jeans</a></li>
+                                <li role="presentation"><a href="/views/Boulangeries.html" data-target="#Boulangeries" aria-controls="Boulangeries" role="tab">French Bakeries</a></li>
+                                <li role="presentation"><a href="/views/Consultat.html" data-target="#Consultat" aria-controls="Consultat" role="tab" data-toggle="tab">French Consulate</a></li>
+                            </ul> <!-- / End of Nav Tabs -->
                         
+                            <!-- Tab Panes -->
+                            <div class="tab-content tab-border">
+                                <div class="tab-pane fade in active" role="tabpanel" id="Notre-Dame">
+                                </div> <!-- / End Notre-Dame -->
+                                <div class="tab-pane fade" role="tabpanel" id="Quartier">
+                                </div> <!-- / End Quartier -->
+                                <div class="tab-pane fade" role="tabpanel" id="Consulate">
+                                </div> <!-- / End Consulate -->
+                                <div class="tab-pane fade" role="tabpanel" id="Hudson">
+                                </div> <!-- / End Hudson -->
+                                <div class="tab-pane fade" role="tabpanel" id="De-Nimes">
+                                </div> <!-- / End De-Nimes -->
+                                <div class="tab-pane fade" role="tabpanel" id="Boulangeries">
+                                </div> <!-- / End Boulangeries -->
+                                <div class="tab-pane fade" role="tabpanel" id="Consultat">
+                                </div> <!-- / End Consultat -->
+                            </div> <!-- / End of Tab Panes --> 
+                            </div> <!-- / End of Panel Body Guided Tour -->
+                            </div> <!-- / End Panel Guided Tour -->
+                            
+                                   
                         <div id="root_footer"></div> <!-- Sticky footer requirement -->
         
     </div> <!-- / End of 2nd container -->
@@ -152,5 +155,16 @@
     <script src="javascripts/behavior.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascripts/bootstrap.min.js"></script>
+    <script>
+      function initMap(){
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv,{
+            center: {lat: 37.7909714, lng: -122.4087459},
+            zoom: 15
+        });
+    }
+      </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+         async defer></script>
   </body>
 </html>
