@@ -7271,31 +7271,35 @@ button.close {
 }
 */
 /* line 10, ../sass/_base.scss */
+body {
+  padding-top: 50px; }
+
+/* line 14, ../sass/_base.scss */
 .jumbotron {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../img/French-way.jpg) center center;
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
   width: 100vw; }
 
 /*border-bottom: 1px solid #121212;
 box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/
-/* line 25, ../sass/_base.scss */
+/* line 29, ../sass/_base.scss */
 .text-front {
   color: white; }
 
-/* line 29, ../sass/_base.scss */
+/* line 33, ../sass/_base.scss */
 .tab-border {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px; }
 
-/* line 36, ../sass/_base.scss */
+/* line 40, ../sass/_base.scss */
 .hidding {
   visibility: hidden; }
 
-/* line 40, ../sass/_base.scss */
+/* line 44, ../sass/_base.scss */
 .img-responsive {
   width: 100%; }
 
