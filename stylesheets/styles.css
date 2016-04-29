@@ -7305,8 +7305,7 @@ box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/
 
 /* line 48, ../sass/_base.scss */
 #map {
-  width: 600px;
-  min-width: 300px;
+  width: 400px;
   height: 400px; }
 
 /*
