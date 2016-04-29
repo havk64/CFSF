@@ -7305,9 +7305,9 @@ box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/
 
 /* line 48, ../sass/_base.scss */
 #map {
-  width: 500px;
-  height: 400px;
-  margin: 0 auto; }
+  width: 600px;
+  min-width: 300px;
+  height: 400px; }
 
 /*
 .box-custom { //Trying to give color of old things...
