@@ -7304,7 +7304,7 @@ box-shadow: rgba(255,255,255,0.7) 0 .5px 0;*/
   width: 100%; }
 
 /* line 48, ../sass/_base.scss */
-#map {
+#map, iframe {
   width: 400px;
   height: 400px; }
 

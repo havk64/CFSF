@@ -23,7 +23,7 @@ $(function(){
                 var html = template(data);
                 $('#root').prepend(html);
                 renderTabs(); //Render tabs with chosen language
-                initMap(); //Load the Google Maps
+                //initMap(); //Load the Google Maps
             }
         });
     }
