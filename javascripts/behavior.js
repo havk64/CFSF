@@ -46,11 +46,11 @@ $(function(){
         $('#footer').removeClass('hidden'); // Show footer that is hidden.
     }
     
-    function initMap(){
+    /*function initMap(){
         var mapDiv = document.getElementById('map');
         var map = new google.maps.Map(mapDiv,{
             center: {lat: 37.7909714, lng: -122.4087459},
             zoom: 15
         });
-    }
+    }*/
 })
