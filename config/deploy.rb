@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.5.0'
 
-set :application, 'Le chemin francophone'
+set :application, 'Le_chemin_francophone'
 set :repo_url, 'git@github.com:havk64/CFSF.git'
 
 # Default branch is :master
@@ -25,6 +25,7 @@ set :deploy_to, '/home/deploy/CFSF'
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+set :linked_files, ["config/secrets.json"]
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system')

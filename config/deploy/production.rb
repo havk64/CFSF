@@ -7,7 +7,7 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 server 'havk64.tech', user: 'deploy', roles: %w{app web}
-set branch: "master"
+set :branch, "master"
 
 # role-based syntax
 # ==================
@@ -46,6 +46,9 @@ set branch: "master"
 #    forward_agent: false,
 #    auth_methods: %w(password)
 #  }
+set :ssh_options, {
+    :forward_agent => true
+}
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
