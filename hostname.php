@@ -1,3 +1,3 @@
 <?php
-echo "<p>" . exec("hostname") . "<p>\n";
+echo  exec("hostname");
 ?>
